@@ -1,0 +1,24 @@
+{
+  "name": "react-native-9patch-image",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rusfearuth/react-native-9patch-image.git"
+  },
+  "version": "0.3",
+  "description": "This native module supports of using 9-patch drawable resources`",
+  "author": {
+    "name": "Alexander Ustinov",
+    "email": "rusfearuth@gmail.com",
+    "url": "http://github.com/rusfearuth"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/rusfearuth/react-native-9patch-image",
+  "keywords": [
+    "9-patch",
+    "nine-patch",
+    "images",
+    "react-native",
+    "native",
+    "drawables"
+  ]
+}
