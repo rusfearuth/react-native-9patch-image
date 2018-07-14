@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import {
   View,
   Image,
+  StyleSheet,
   requireNativeComponent,
 } from 'react-native';
 import resolveAssetSource from 'react-native/Libraries/Image/resolveAssetSource';
@@ -19,9 +20,8 @@ class NinePatchView extends Component {
     return (
       <View {...rest}>
         <RCTImageCapInset
-          style={{position: 'absolute', top: 0, left: 0, bottom: 0, right: 0}}
+          style={styles.capInset}
           source={normalizedSource}
-          resizeMode={Image.resizeMode.stretch}
         />
         {children}
       </View>
@@ -36,6 +36,17 @@ NinePatchView.propTypes = {
 
 const RCTImageCapInset = requireNativeComponent('RCTImageCapInset', {
   propTypes: NinePatchView.propTypes,
+});
+
+const styles = StyleSheet.create({
+  capInset: {
+    resizeMode: 'stretch',
+    position: 'absolute',
+    top: 0,
+    left: 0,
+    bottom: 0,
+    right: 0
+  }
 });
 
 export default NinePatchView;
