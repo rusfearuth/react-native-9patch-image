@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import {
-  StyleSheet,
   Image,
 } from 'react-native';
 
@@ -10,7 +9,7 @@ class NinePatchView extends Component {
     return (
       <Image
         {...this.props}
-        resizeMode={Image.resizeMode.stretch}
+        resizeMode='stretch'
       />
     );
   }
